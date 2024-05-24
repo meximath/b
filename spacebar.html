@@ -1,20 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spacebar Clicker | MexiMath</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png"> 
-    <body style="background-color:#1C1C1C"></body>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
-        body { display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        #container { position: relative; }
-        #fullscreen-iframe { width: 900px; height: 520px; border: none; border-radius: 10px; overflow: hidden; }
-        #fullscreen-button { position: absolute; bottom: 0; left: 20px; margin: -20px; }
-        /* Adjusted the left property to move the button 20px to the right */
+        body { 
+            background: linear-gradient(to bottom, #0158a8, #000b6e);
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+            flex-direction: column; 
+        }
+        #container { 
+            position: relative; 
+        }
+        #fullscreen-iframe { 
+            width: 1000px; 
+            height: 600px; 
+            border: 5px solid rgb(255, 255, 255); 
+            border-radius: 10px; 
+            overflow: hidden; 
+        }
+        #fullscreen-button { 
+            position: absolute; 
+            bottom: 0; 
+            left: 20px; 
+            margin: -20px; 
+        }
+        #game-title { 
+            background-color: rgb(255, 255, 255); 
+            color: black; 
+            border-radius: 10px; 
+            padding: 15px 30px; 
+            font-size: 24px; 
+            font-weight: bold; 
+            font-family: 'Trebuchet MS', Arial, sans-serif; 
+            margin-bottom: 20px; 
+        }
     </style>
 </head>
 <body>
+
+<div id="game-title">Spacebar Clicker</div>
 
 <div id="container">
     <iframe id="fullscreen-iframe" src="https://mexisofunny.github.io/spacebar-clicker/game/" frameborder="0"></iframe>
@@ -26,8 +58,8 @@
 </script>
 <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
     new Crate({
-        server: '1120506921036816537', // Mexicraft Forever
-        channel: '1120510313436028938' // #webchat
+        server: '1120506921036816537', 
+        channel: '1120510313436028938' 
     })
 </script>
 </body>
