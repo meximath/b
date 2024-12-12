@@ -48,7 +48,7 @@
 <div id="game-title">2048</div>
 
 <div id="container">
-    <iframe id="fullscreen-iframe" src="https://mexisofunny.github.io/2048/" frameborder="0"></iframe>
+    <iframe id="fullscreen-iframe" src="now.gg" frameborder="0"></iframe>
     <button id="fullscreen-button">Fullscreen</button>
 </div>
 
